@@ -41,13 +41,15 @@ var invalidInputReturnCode = 100;
 var testCaseCounter = 0;
 _.each(testSuit,
     function(testCase) {
-        if (arrayFlattener(testCase) === invalidInputReturnCode)
+        var testCaseReturnValue = arrayFlattener(testCase);
+        if (testCaseReturnValue === invalidInputReturnCode) {
             console.log('The test case ' + testCaseCounter + ' failed');
-        else
+        }
+        else {
             console.log('The test case ' + testCaseCounter + ' passed');
+            console.log(testCaseReturnValue);
+        }
         testCaseCounter++;
 
     }
 );
-
-
