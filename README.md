@@ -2,7 +2,7 @@
 ===
 
 arrayFlattener accepts a nested array as a paramter and outputs a flattened array. For eg,
- If [[1,2,[3]],4] is passed as the paramater to the arrayFlatterner function, [1,2,3,4] will be the returned output. 
+ if [[1,2,[3]],4] is passed as the paramater to the arrayFlatterner function, [1,2,3,4] will be the returned value. 
  
 # setup
 ===
